@@ -4,7 +4,7 @@
 
 body {
   width: 100vw;
-  
+  height: 100vh;
   overflow: hidden;
   background-color: hsl(233deg, 47%, 7%);
   font-size: 15px;
@@ -92,6 +92,10 @@ main .right {
 }
 
 @media (max-width: 600px) {
+  body {
+        height: auto;
+        overflow: auto;
+    }
   main {
        width: 22.5rem;
         height: 47rem;
