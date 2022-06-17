@@ -4,7 +4,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  
   overflow: hidden;
   background-color: hsl(233deg, 47%, 7%);
   font-size: 15px;
