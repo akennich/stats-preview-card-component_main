@@ -20,7 +20,7 @@ $Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
 }
 body {
     width: 100vw;
-    
+    height: 100vh;
     overflow: hidden;
     background-color: $Very-dark-blue;
     font-size: 15px;
@@ -107,10 +107,14 @@ main{
     flex-direction: column;
     justify-content: flex-end;
 }
-@media (max-width: 600px) {
+@media only screen and  (max-width: 600px) {
+    body {
+        height: auto;
+        overflow: auto;
+    }
     main {
-        width: 22.5rem;
-        height: 47rem;
+        width: 24rem;
+        height: 42rem;
         border-radius: 0.5rem;
         overflow: hidden;
         display: flex;
@@ -134,7 +138,9 @@ main{
     }
     .up {
         text-align: center;
-        padding: 0px 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 0.5em;
         h1 {
             margin-top: 0;
             margin-bottom: 0.5em;
@@ -142,6 +148,8 @@ main{
         }
         p {
             margin-top: 0;
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
     .down {
@@ -152,5 +160,6 @@ main{
     }
     .box {
         text-align: center;
+        flex-grow: 1;
     }
 }
